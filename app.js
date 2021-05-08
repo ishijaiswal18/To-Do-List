@@ -14,7 +14,7 @@ app.use(express.static("public"));
 
 app.get("/", function(req, res){
     let day  = date.getDate();
-     res.render("list", {listTitle: day , newListItem: items});
+     res.render("list", {listTitle: day , newListItem: items}); // will look into views and find file namesd as list , where replace listTitle with day and newlistItem with items
 });
 
 app.post("/", function(req,res){
